@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal loan payment calculator – Loan Compare</title>
+  <meta name="description" content="Free personal loan calculator: enter the amount, APR and term to see the monthly payment, total interest and total repaid.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" fill="#1b7f5c"/><path fill="#fff" d="M34 58h10v16H34zM49 46h10v28H49zM64 34h10v40H64z"/></svg>
+        Loan Compare
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="how-to-compare-personal-loans.html">How to compare</a>
+        <a href="apr-explained.html">APR explained</a>
+        <a href="calculator.html" aria-current="page">Calculator</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <article class="article" style="max-width:none">
+        <h1>Personal loan payment calculator</h1>
+        <p class="lede">Enter a loan amount, APR and term to see what it costs each month and in total.</p>
+
+        <div class="calc">
+          <form id="calc-form" novalidate>
+            <div class="field">
+              <label for="amount">Loan amount ($)</label>
+              <input id="amount" type="number" inputmode="decimal" min="100" max="1000000" step="100" value="10000">
+            </div>
+            <div class="field">
+              <label for="apr">APR (%)</label>
+              <input id="apr" type="number" inputmode="decimal" min="0" max="99" step="0.01" value="12">
+            </div>
+            <div class="field">
+              <label for="term">Term (months)</label>
+              <input id="term" type="number" inputmode="numeric" min="1" max="360" step="1" value="36">
+            </div>
+            <p id="calc-error" class="error" role="alert" hidden></p>
+          </form>
+
+          <div class="result" aria-live="polite">
+            <div class="updated">Monthly payment</div>
+            <div class="big" id="monthly">–</div>
+            <dl>
+              <dt>Total interest</dt><dd id="interest">–</dd>
+              <dt>Total repaid</dt><dd id="total">–</dd>
+            </dl>
+          </div>
+        </div>
+
+        <p class="updated" style="max-width:42rem;margin-top:1.25rem">This is an estimate for a fixed-rate loan repaid in equal monthly payments. It treats the APR as the interest rate, so it does not separately account for an origination fee taken out of the loan. Your actual payment comes from the lender. See <a href="apr-explained.html">APR explained</a> for how fees change the cost.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="about.html#disclosure">Advertiser disclosure</a>
+        <a href="about.html#contact">Contact</a>
+      </nav>
+      <p>Loan Compare is not a lender, does not make loan or credit decisions, and does not offer financial advice. Offers come from third-party lenders. We may be paid when you view or accept an offer. Rates, terms and approval are decided by the lender.</p>
+      <p>&copy; 2026 Soluntion Labs</p>
+    </div>
+  </footer>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
