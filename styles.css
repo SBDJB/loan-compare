@@ -140,6 +140,24 @@ td.num, th.num { text-align: right; }
 .error { color: #b3261e; margin: 0.5rem 0 0; }
 @media (prefers-color-scheme: dark) { .error { color: #f2b8b5; } }
 
+/* Lender comparison */
+.cmp-form { display: grid; gap: 0 1.25rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); max-width: 34rem; margin-top: 1.5rem; }
+.field select {
+  width: 100%; font: inherit; padding: 0.65rem 0.8rem; border-radius: 0.6rem;
+  border: 1px solid var(--line); background: var(--bg); color: var(--text);
+}
+.cmp-summary { font-weight: 600; margin: 0.5rem 0 1rem; }
+.lenders { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
+.lender { background: var(--surface); border: 1px solid var(--line); border-radius: 1rem; padding: 1.25rem; display: flex; flex-direction: column; }
+.lender-muted { opacity: 0.75; }
+.lender-name { margin: 0; font-size: 1.15rem; }
+.lender-apr { margin: 0.4rem 0 0; font-size: 1.5rem; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.lender-estimate { margin: 0.35rem 0 0; font-variant-numeric: tabular-nums; }
+.lender-reason { margin: 0.35rem 0 0; color: var(--muted); }
+.lender-facts { margin: 0.9rem 0 1.1rem; padding-left: 1.1rem; color: var(--muted); font-size: 0.95rem; flex: 1; }
+.lender-facts li { margin-bottom: 0.2rem; }
+.lender .button { text-align: center; }
+
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); margin-top: 2rem; padding: 2rem 0 3rem; color: var(--muted); font-size: 0.925rem; }
 .site-footer p { max-width: 52rem; margin: 0 0 0.75rem; }
