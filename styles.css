@@ -56,7 +56,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .logo svg { width: 2rem; height: 2rem; border-radius: 0.5rem; }
 .site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin-left: auto; }
 .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; padding: 0.25rem 0; }
-.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--brand); }
+.site-nav a:hover, .site-nav a[aria-current] { color: var(--brand); }
 
 /* Hero */
 .hero { padding: 4rem 0 3rem; }
