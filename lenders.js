@@ -5,8 +5,8 @@
 // Loan Compare is not affiliated with any of these lenders, and the urls are plain
 // links with no tracking. Do not add a lender whose top APR is 36% or more.
 //
-// badge is one or two letters for the lender's coloured initials circle. It is our own
-// neutral marker, not the lender's logo: do not use lender logos without permission.
+// Each lender's name is shown on a coloured label in our own palette. That label is not
+// the lender's logo: do not use lender logos without permission.
 //
 // Fields: minAmount/maxAmount in dollars (null = not published on the page we checked);
 // terms is either {min, max} in months or a list of the specific terms offered.
@@ -15,7 +15,6 @@ window.LENDERS_CHECKED = "October 8, 2026";
 window.LENDERS = [
   {
     name: "Happen Bank",
-    badge: "HB",
     url: "https://www.happen.com/personal-loan",
     minApr: 5.96, maxApr: 35.99,
     minAmount: 1000, maxAmount: 75000,
@@ -25,7 +24,6 @@ window.LENDERS = [
   },
   {
     name: "Upstart",
-    badge: "UT",
     url: "https://www.upstart.com/personal-loans",
     minApr: 6.3, maxApr: 35.99,
     minAmount: 1000, maxAmount: 75000,
@@ -35,7 +33,6 @@ window.LENDERS = [
   },
   {
     name: "Best Egg",
-    badge: "BE",
     url: "https://www.bestegg.com/personal-loans/",
     minApr: 6.99, maxApr: 35.99,
     minAmount: 2000, maxAmount: 50000,
@@ -45,7 +42,6 @@ window.LENDERS = [
   },
   {
     name: "Discover",
-    badge: "DI",
     url: "https://www.discover.com/personal-loans/",
     minApr: 6.99, maxApr: 24.99,
     minAmount: 2500, maxAmount: 40000,
@@ -55,7 +51,6 @@ window.LENDERS = [
   },
   {
     name: "SoFi",
-    badge: "SO",
     url: "https://www.sofi.com/personal-loans/",
     minApr: 6.99, maxApr: 35.49,
     minAmount: null, maxAmount: null,
@@ -65,7 +60,6 @@ window.LENDERS = [
   },
   {
     name: "Upgrade",
-    badge: "UG",
     url: "https://www.upgrade.com/personal-loans/",
     minApr: 7.74, maxApr: 35.99,
     minAmount: 1000, maxAmount: 50000,
