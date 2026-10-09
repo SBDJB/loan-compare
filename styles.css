@@ -150,7 +150,20 @@ td.num, th.num { text-align: right; }
 .lenders { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
 .lender { background: var(--surface); border: 1px solid var(--line); border-radius: 1rem; padding: 1.25rem; display: flex; flex-direction: column; }
 .lender-muted { opacity: 0.75; }
+.lender-head { display: flex; align-items: center; gap: 0.75rem; }
 .lender-name { margin: 0; font-size: 1.15rem; }
+/* Neutral initials badge in our own palette. Not the lender's logo or brand colour. */
+.badge {
+  flex: none; width: 2.5rem; height: 2.5rem; border-radius: 50%;
+  display: inline-grid; place-items: center;
+  color: #fff; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.02em;
+}
+.badge-0 { background: #1b7f5c; }
+.badge-1 { background: #2f6f9f; }
+.badge-2 { background: #7a4f9a; }
+.badge-3 { background: #a0522d; }
+.badge-4 { background: #4a6572; }
+.badge-5 { background: #8a6d1f; }
 .lender-apr { margin: 0.4rem 0 0; font-size: 1.5rem; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
 .lender-estimate { margin: 0.35rem 0 0; font-variant-numeric: tabular-nums; }
 .lender-reason { margin: 0.35rem 0 0; color: var(--muted); }

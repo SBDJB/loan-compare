@@ -58,7 +58,13 @@
 
   function card(lender, amount, months, reason) {
     var node = el('li', 'lender' + (reason ? ' lender-muted' : ''));
-    node.appendChild(el('h3', 'lender-name', lender.name));
+    var head = el('div', 'lender-head');
+    // Colour follows the lender's position in lenders.js, so it stays put as the list re-sorts.
+    var badge = el('span', 'badge badge-' + (window.LENDERS.indexOf(lender) % 6), lender.badge);
+    badge.setAttribute('aria-hidden', 'true');
+    head.appendChild(badge);
+    head.appendChild(el('h3', 'lender-name', lender.name));
+    node.appendChild(head);
     node.appendChild(el('p', 'lender-apr',
       lender.minApr.toFixed(2) + '% to ' + lender.maxApr.toFixed(2) + '% APR'));
 
