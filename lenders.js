@@ -10,7 +10,7 @@
 //
 // Fields: minAmount/maxAmount in dollars (null = not published on the page we checked);
 // terms is either {min, max} in months or a list of the specific terms offered.
-window.LENDERS_CHECKED = "October 8, 2026";
+window.LENDERS_CHECKED = "November 24, 2026";
 
 window.LENDERS = [
   {
@@ -19,13 +19,13 @@ window.LENDERS = [
     minApr: 5.96, maxApr: 35.99,
     minAmount: 1000, maxAmount: 75000,
     terms: { min: 24, max: 84 },
-    fee: "Origination fee 0% to 8%",
-    note: "Lowest rate requires excellent credit."
+    fee: "Origination fee usually 0% to 8%",
+    note: "The lowest rates are for borrowers with excellent credit."
   },
   {
     name: "Upstart",
     url: "https://www.upstart.com/personal-loans",
-    minApr: 6.3, maxApr: 35.99,
+    minApr: 6.1, maxApr: 35.99,
     minAmount: 1000, maxAmount: 75000,
     terms: [36, 60],
     fee: "An origination fee may apply",
@@ -37,7 +37,7 @@ window.LENDERS = [
     minApr: 6.99, maxApr: 35.99,
     minAmount: 2000, maxAmount: 50000,
     terms: { min: 36, max: 60 },
-    fee: "Origination fee 0.99% to 9.99%",
+    fee: "Origination fee 0.99% to 9.99%, at least 4.99% on terms of 4 years or more",
     note: "Higher minimum amounts in MA, OH and GA."
   },
   {
@@ -52,10 +52,10 @@ window.LENDERS = [
   {
     name: "SoFi",
     url: "https://www.sofi.com/personal-loans/",
-    minApr: 6.99, maxApr: 35.49,
+    minApr: 6.49, maxApr: 35.49,
     minAmount: null, maxAmount: null,
     terms: { min: 24, max: 84 },
-    fee: "No required origination fee",
+    fee: "No origination fee on the rates shown",
     note: "Rates shown include 0.25% autopay and 0.25% member discounts."
   },
   {
